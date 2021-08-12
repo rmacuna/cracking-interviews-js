@@ -2,13 +2,13 @@
 
 // This is cheating 😅
 const reverseString = (str = ``) => {
-	return str.split('').reverse().join();
+	return [...str].reverse().join();
 }
 
-// Iterative solution 
+// Iterative solution 🏋🏼‍♂️
 const reverseStringIterative = (str = ``) => {
 	let reversedStr = "";
-	for (let i = str.length; i > 0; i++) {
+	for (let i = str.length - 1; i >= 0; i--) {
 		reverseString += str[i];
 	}
 	return reversedStr;
