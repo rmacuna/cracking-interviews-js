@@ -9,7 +9,7 @@ const reverseString = (str = ``) => {
 const reverseStringIterative = (str = ``) => {
 	let reversedStr = "";
 	for (let i = str.length - 1; i >= 0; i--) {
-		reverseString += str[i];
+		reversedStr += str[i];
 	}
 	return reversedStr;
 }
