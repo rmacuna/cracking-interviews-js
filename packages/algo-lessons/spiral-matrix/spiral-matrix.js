@@ -1,25 +1,33 @@
-// Writes a function that accepts an integer N
-// and prints a NxN spiral matrix. 
-// --- Examples
-//   matrix(2)
-//     [[1, 2],
-//     [4, 3]]
-//   matrix(3)
-//     [[1, 2, 3],
-//     [8, 9, 4],
-//     [7, 6, 5]]
-//  matrix(4)
-//     [[1,   2,  3, 4],
-//     [12, 13, 14, 5],
-//     [11, 16, 15, 6],
-//     [10,  9,  8, 7]]
+'use-strict';
+/**
+ * @fileoverview
+ * Writes a function that accepts an integer N
+ * and prints a NxN spiral matrix. 
+ *
+ * Ex1:
+ *  -	 matrix(2)
+ * 			 [[1, 2], 
+ *  			[4, 3]]
+ * Ex2:
+ *  -  matrix(3)
+ *     [[1, 2, 3],
+ *      [8, 9, 4],
+ *      [7, 6, 5]]
+ * Ex3:  
+ *  -	 matrix(4)
+	      [[1,   2,  3, 4],
+  	    [12, 13, 14, 5],
+    	  [11, 16, 15, 6],
+ *  	  [10,  9,  8, 7]]
+ */
+
 
 /**
  * Create a matrix NxN given the length 
  * @param {Number} n size of the matrix. 
  */
 const createMatrix = (n = 2) => {
-	const result = [];
+	let result = [];
 	for (let i = 0; i < n; i++) {
 		result = [...result, new Array(n)];
 	}
@@ -65,3 +73,8 @@ const spiralMatrix = (n = 2) => {
 	}
 	return matrix;
 }
+
+
+// Run the program
+const matrix = spiralMatrix(4);
+console.log("🚀 ~ file: spiral-matrix.js ~ line 72 ~ matrix", matrix)
