@@ -1,5 +1,3 @@
-
-
 // This is cheating 😅
 const reverseString = (str = ``) => {
 	return [...str].reverse().join();
