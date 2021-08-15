@@ -1,6 +1,6 @@
 
 
-# Quick reminder of time complexity 
+# Quick reminder of time complexity and Big O notation
 
 Big O time is the language and metric we use to describe the efficency of algorithms. 
 
