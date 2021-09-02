@@ -3,7 +3,7 @@ const reverseString = (str = ``) => {
 	return [...str].reverse().join();
 }
 
-// Iterative solution 🏋🏼‍♂️
+// Iterative solution 🏋🏼‍♂️ O(n)
 const reverseStringIterative = (str = ``) => {
 	let reversedStr = "";
 	for (let i = str.length - 1; i >= 0; i--) {
